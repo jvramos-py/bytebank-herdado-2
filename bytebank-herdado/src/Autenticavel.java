@@ -1,4 +1,3 @@
-
 //contrato Autenticavel
 	//quem assina esse contrato, precisa implementar
 		//metodo setSenha
