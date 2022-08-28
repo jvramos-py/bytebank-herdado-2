@@ -3,6 +3,9 @@
 //new ContaCorrente()
 public class ContaCorrente extends Conta implements Tributavel {
 
+	//valor de tributação da Conta Corrente atual em %
+	private double TributoDaCC = 0.01;
+	
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
 	}
@@ -20,7 +23,7 @@ public class ContaCorrente extends Conta implements Tributavel {
 
 	@Override
 	public double getValorImposto() {	
-		return super.saldo * 0.01;
+		return super.saldo * TributoDaCC;
 	}
 	
 }
